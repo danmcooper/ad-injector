@@ -257,8 +257,8 @@
   document.addEventListener(
     "touchmove",
     (e) => {
-      e.preventDefault(); // prevent scrolling while dragging
       if (!isDragging) return;
+      e.preventDefault(); // prevent scrolling while dragging
       const touch = e.touches[0];
       ui.style.left = touch.clientX - offsetX + "px";
       ui.style.top = touch.clientY - offsetY + "px";
