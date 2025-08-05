@@ -236,17 +236,13 @@
   });
 
   // start moving
-  ui.addEventListener(
-    "touchstart",
-    (e) => {
-      const touch = e.touches[0];
-      isDragging = true;
-      offsetX = touch.clientX - ui.offsetLeft;
-      offsetY = touch.clientY - ui.offsetTop;
-      ui.style.cursor = "grabbing";
-    },
-    { passive: false }
-  );
+  ui.addEventListener("touchstart", (e) => {
+    const touch = e.touches[0];
+    isDragging = true;
+    offsetX = touch.clientX - ui.offsetLeft;
+    offsetY = touch.clientY - ui.offsetTop;
+    ui.style.cursor = "grabbing";
+  });
 
   // moving
   document.addEventListener("mousemove", (e) => {

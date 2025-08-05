@@ -1,14 +1,15 @@
 # Ad Injector Tool
 
-This tool injects ads into any existing webpage using a bookmarklet. Hosted on GitHub Pages for HTTPS compatibility.
+This tool injects ads into existing webpages using a bookmarklet, using ads provided from https://storage.cloud.kargo.com/ad/campaign/rm/test/interview-ads.json. Hosted on GitHub Pages for easy https.
 
 ## Usage
 
 1. Visit any webpage like Distractify or Cookie & Kate.
 2. Click the bookmarklet (see below).
-3. Click "Inject Ads" in the component that appears.
+3. Click "Inject" in the component that appears and ads should appear (middle ads and sticky ads).
 4. You can drag and drop the control in the page.
-5. Click Reload to reload the page without the ads.
+5. Click "Reload" to reload the page without the ads.
+6. Both middle and sticky ads should work on mobile, as well as touch to move the control.
 
 ## Bookmarklet
 
