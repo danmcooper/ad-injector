@@ -1,0 +1,121 @@
+.kargo-ad-injector-ui {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  z-index: 1000000002;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: grab;
+  width: 180px;
+}
+
+#kargo-ad-injector-ui_inject-btn {
+  background: #28a745;
+}
+
+#kargo-ad-injector-ui_inject-btn:hover {
+  background: #218838;
+}
+
+#kargo-ad-injector-ui_reload-btn {
+  background-color: #007bff;
+}
+
+#kargo-ad-injector-ui_reload-btn:hover {
+  background-color: #0056b3;
+}
+
+.kargo-ad-injector-ui .kargo-ad-injector-ui_btn button {
+  line-height: 32px;
+}
+
+#kargo-ad-injector-ui_status {
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.kargo-ad-injector-ad-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px auto;
+  position: relative;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.kargo-ad-injector-ad-container.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.kargo-ad-injector-ad-container iframe,
+.kargo-ad-injector-ad-container div,
+.kargo-ad-injector-ad-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.kargo-ad-injector-ad-sticky {
+  position: fixed;
+  bottom: 10px;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 1000000001;
+  margin: 0 auto;
+  max-width: 90vw;
+  overflow: visible;
+}
+
+.kargo-ad-injector-ad-sticky .kargo-ad-injector-ad-sticky_ad-inner {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.kargo-ad-injector-ad-sticky .kargo-ad-injector-ad-sticky_close-btn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0;
+}
+
+.kargo-ad-injector-ui_btn {
+  display: flex;
+  gap: 8px;
+}
+
+.kargo-ad-injector-ui_btn button {
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 4px;
+  transition: background 0.2s ease;
+  text-align: center;
+  display: inline-block;
+}
