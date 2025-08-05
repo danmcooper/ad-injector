@@ -1,4 +1,4 @@
-javascript: (function () {
+javascript:(function () {
   const o = document.querySelector(".kargo-ad-injector-ui");
   if (o) o.remove();
   const ts = Date.now();
