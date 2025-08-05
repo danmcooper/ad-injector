@@ -15,7 +15,7 @@ This tool injects ads into existing webpages using a bookmarklet, using ads prov
 
 Create a bookmark in your browser. Then for URL insert the following exactly:
 
-javascript:(function(){var o=document.querySelector(".kargo-ad-injector-ui");if(o)o.remove();var ts=Date.now();fetch("https://danmcooper.github.io/ad-injector/index.html?"+ts).then(r=>r.text()).then(html=>{var d=new DOMParser().parseFromString(html,"text/html"),ui=d.querySelector(".kargo-ad-injector-ui");if(!ui)return;document.body.appendChild(ui);var link=document.createElement("link");link.rel="stylesheet";link.href="https://danmcooper.github.io/ad-injector/style.css?"+ts;document.head.appendChild(link);var s=document.createElement("script");s.src="https://danmcooper.github.io/ad-injector/script.js?"+ts;document.body.appendChild(s);});})();
+javascript:(function(){const o=document.querySelector(".kargo-ad-injector-ui");if(o)o.remove();const ts=Date.now();fetch("https://danmcooper.github.io/ad-injector/index.html?"+ts).then(r=>r.text()).then(html=>{const d=new DOMParser().parseFromString(html,"text/html"),ui=d.querySelector(".kargo-ad-injector-ui");if(!ui)return;document.body.appendChild(ui);const link=document.createElement("link");link.rel="stylesheet";link.href="https://danmcooper.github.io/ad-injector/style.css?"+ts;document.head.appendChild(link);const s=document.createElement("script");s.src="https://danmcooper.github.io/ad-injector/script.js?"+ts;document.body.appendChild(s);});})();
 
 Save the bookmark. Now when you're on the page, click the bookmark ("bookmarklet") to use injection control.
 
