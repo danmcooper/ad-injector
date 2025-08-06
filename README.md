@@ -9,7 +9,7 @@ This tool injects ads into existing webpages using a bookmarklet, using ads prov
 3. Click "Inject" in the component that appears and ads should appear (middle ads and sticky ads).
 4. You can drag and drop the control in the page.
 5. Click "Reload" to reload the page without the ads.
-6. Both middle and sticky ads should work on mobile emulation in desktop browsers, as well as touch to move the control. This has not been confirmed to work on physical mobile devices.
+6. Both middle and sticky ads should work on mobile emulation in desktop browsers, as well as touch to move the control. This has been tested to work on an Android mobile.
 7. Bookmarklet includes cachebusting to get latest.
 
 ## Bookmarklet
