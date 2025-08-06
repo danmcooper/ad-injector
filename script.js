@@ -126,7 +126,7 @@
     ui.style.left = `${left}px`;
     ui.style.top = `${top}px`;
   } else {
-    ui.style.left = "20px";
+    ui.style.left = "110px"; // 180px width/2 + 20px
     ui.style.top = "20px";
   }
 
